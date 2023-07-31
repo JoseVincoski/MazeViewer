@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "nLV1W50nI6pLsgXF070RYwg+FRv5sImBwx8SSO4ln4w7MIQEm7nayLEo3FdxNV2yyRhP7VYPnfGiOlK27epDyg==",
+  "dgSpecHash": "o6EgvnHgZjGxeqxOmmJrw80SgC8jnw4jfEMc31xXft3EqToBiSKpRLgqkodAiFHYqvJki1T0PPmyhP95VfZUWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\temp\\Desktop\\Maze Projects\\MazeViewer\\MazePrinter\\MazePrinter.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\temp\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0-preview.6.23329.7\\microsoft.extensions.configuration.8.0.0-preview.6.23329.7.nupkg.sha512",
+    "C:\\Users\\temp\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0-preview.6.23329.7\\microsoft.extensions.configuration.abstractions.8.0.0-preview.6.23329.7.nupkg.sha512",
+    "C:\\Users\\temp\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\8.0.0-preview.6.23329.7\\microsoft.extensions.configuration.fileextensions.8.0.0-preview.6.23329.7.nupkg.sha512",
+    "C:\\Users\\temp\\.nuget\\packages\\microsoft.extensions.configuration.json\\8.0.0-preview.6.23329.7\\microsoft.extensions.configuration.json.8.0.0-preview.6.23329.7.nupkg.sha512",
+    "C:\\Users\\temp\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0-preview.6.23329.7\\microsoft.extensions.fileproviders.abstractions.8.0.0-preview.6.23329.7.nupkg.sha512",
+    "C:\\Users\\temp\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\8.0.0-preview.6.23329.7\\microsoft.extensions.fileproviders.physical.8.0.0-preview.6.23329.7.nupkg.sha512",
+    "C:\\Users\\temp\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\8.0.0-preview.6.23329.7\\microsoft.extensions.filesystemglobbing.8.0.0-preview.6.23329.7.nupkg.sha512",
+    "C:\\Users\\temp\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0-preview.6.23329.7\\microsoft.extensions.primitives.8.0.0-preview.6.23329.7.nupkg.sha512",
+    "C:\\Users\\temp\\.nuget\\packages\\system.text.encodings.web\\8.0.0-preview.6.23329.7\\system.text.encodings.web.8.0.0-preview.6.23329.7.nupkg.sha512",
+    "C:\\Users\\temp\\.nuget\\packages\\system.text.json\\8.0.0-preview.6.23329.7\\system.text.json.8.0.0-preview.6.23329.7.nupkg.sha512"
+  ],
   "logs": []
 }
