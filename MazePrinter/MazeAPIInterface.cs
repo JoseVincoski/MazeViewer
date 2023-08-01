@@ -5,7 +5,7 @@ using System.Net.Http.Json;
 using System.Text.Json;
 using Domain.MazeGenerator;
 
-namespace HttpClientSample
+namespace MazePrinter
 {
     public class MazeAPIInterface
     {
@@ -34,8 +34,8 @@ namespace HttpClientSample
                 //TODO: Solve this problem
                 //I know it's ridiculous but I couldn't make it work by just desserializing directly to Maze
                 //Neither with ReadFromString or ReadFromStream.
-                var b = await response.Content.ReadFromJsonAsync<object>();
-                return JsonSerializer.Deserialize<Maze>(b.ToString(), options: serializerOptions);
+                var aux = await response.Content.ReadFromJsonAsync<object>();
+                return JsonSerializer.Deserialize<Maze>(aux.ToString(), options: serializerOptions);
             }
 
             return null;

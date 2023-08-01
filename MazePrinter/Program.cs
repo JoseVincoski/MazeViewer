@@ -1,7 +1,4 @@
-﻿using HttpClientSample;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Configuration.Json;
-using System.Net.Http.Headers;
+﻿using Microsoft.Extensions.Configuration;
 
 namespace MazePrinter
 {

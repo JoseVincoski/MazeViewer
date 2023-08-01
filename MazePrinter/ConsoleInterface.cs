@@ -1,8 +1,6 @@
-﻿using System.Net;
-using System.Net.Http.Headers;
-using System.Net.Http.Json;
+﻿using MazePrinter.PrinterRelatedClasses;
 
-namespace HttpClientSample
+namespace MazePrinter
 {
     public class ConsoleInterface
     {
@@ -14,8 +12,22 @@ namespace HttpClientSample
 
         public async Task Start()
         {
-            var maze = await mazeApi.GetMaze(5,5);
-            var b = 1;
+            var continueLoop = true;
+            while (continueLoop)
+            {
+                Console.Write("Maze Height: ");
+                int.TryParse(Console.ReadLine(), out int mazeHeight);
+
+                Console.Write("Maze Width: ");
+                int.TryParse(Console.ReadLine(), out int mazeWidth);
+
+                var maze = await mazeApi.GetMaze(mazeHeight, mazeWidth);
+                Printer printer = new Printer(maze);
+                printer.PrintMazeTiles();
+
+                Console.Write("To exit type n: ");
+                continueLoop = Console.ReadLine()?.ToLower() != "n";
+            }
         }
     }
 }
