@@ -12,7 +12,7 @@ namespace MazePrinter.PrinterRelatedClasses
 
         public static bool IsWall(TileType tile1)
         {
-            return tile1 == TileType.MovableWall || tile1 == TileType.SolidWall;
+            return tile1 == TileType.MovableWall || tile1 == TileType.SolidWall || tile1 == TileType.BaseWall;
         }
         public static bool AllAreWalls(TileType tile1, TileType tile2)
         {
@@ -34,7 +34,7 @@ namespace MazePrinter.PrinterRelatedClasses
 
         public static bool IsPath(TileType tile1)
         {
-            return tile1 == TileType.Path || tile1 == TileType.VerifiedPath;
+            return tile1 == TileType.BasePath || tile1 == TileType.VerifiedPath;
         }
     }
 }

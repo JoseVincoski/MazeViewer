@@ -40,8 +40,8 @@ namespace MazePrinter.PrinterRelatedClasses
         {
             var currentTile = _maze.GetTileTypeInPosition(y, x);
             if (TileTypeChecker.IsPath(currentTile)) return CharactersPrinter.GetTile(MazeTiles.Path);
-            else if (currentTile == TileType.Start) return CharactersPrinter.GetTile(MazeTiles.Start);
-            else if (currentTile == TileType.Target) return CharactersPrinter.GetTile(MazeTiles.Target);
+            else if (currentTile == TileType.StartPoint) return CharactersPrinter.GetTile(MazeTiles.Start);
+            else if (currentTile == TileType.TargetPoint) return CharactersPrinter.GetTile(MazeTiles.Target);
 
             var tilesInfo = _maze.GetTilesTypeAroundPosition(y, x);
 
