@@ -34,7 +34,7 @@ namespace MazePrinter.PrinterRelatedClasses
 
         public static bool IsPath(TileType tile1)
         {
-            return tile1 == TileType.BasePath || tile1 == TileType.VerifiedPath;
+            return tile1 == TileType.Path || tile1 == TileType.VerifiedPath;
         }
     }
 }

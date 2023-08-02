@@ -21,7 +21,10 @@ namespace MazePrinter
                 Console.Write("Maze Width: ");
                 int.TryParse(Console.ReadLine(), out int mazeWidth);
 
-                var maze = await mazeApi.GetMaze(mazeHeight, mazeWidth);
+                Console.Write("Maze Seed: ");
+                int.TryParse(Console.ReadLine(), out int mazeSeed);
+
+                var maze = await mazeApi.GetMaze(mazeHeight, mazeWidth, mazeSeed);
                 Printer printer = new Printer(maze);
                 printer.PrintMazeTiles();
 

@@ -25,9 +25,12 @@ namespace MazePrinter
             serializerOptions.Converters.Add(new TwoDimensionalIntArrayJsonConverter());
         }
 
-        public async Task<Maze> GetMaze(int mazeHeight, int mazeWidth)
+        public async Task<Maze> GetMaze(int mazeHeight, int mazeWidth, int? mazeSeed)
         {
-            HttpResponseMessage response = await client.PostAsJsonAsync($"{ApiUrl}/MazeGeneration/GetMaze?mazeHeight={mazeHeight}&mazeWidth={mazeWidth}", 0);
+            string parameters = $"?mazeHeight={mazeHeight}&mazeWidth={mazeWidth}";
+            if (mazeSeed != null) parameters += $"&mazeSeed={mazeSeed}";
+
+            HttpResponseMessage response = await client.PostAsJsonAsync($"{ApiUrl}/MazeGeneration/GetMaze{parameters}", 0);
 
             if (response.IsSuccessStatusCode)
             {
